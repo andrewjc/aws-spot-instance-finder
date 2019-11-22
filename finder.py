@@ -34,7 +34,7 @@ args = parser.parse_args()
 min_cores = args.cpu
 min_ram = args.mem
 product_desc = args.product
-run_mode = 'single cheapest' if args.single else 'cheapest' if args.cheapest else 'full'
+run_mode = 'single cheapest' if args.single else 'cheapest' if args.cheapest else 'all'
 arg_regions = args.region.split(',')
 
 print(f'AWS Spot Instance Finder')
